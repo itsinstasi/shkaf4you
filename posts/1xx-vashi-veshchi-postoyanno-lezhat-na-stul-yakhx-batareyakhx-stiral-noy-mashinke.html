@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="shkaf4you" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,169 +71,175 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе">
-								<a href="../tags/./shkafkupe.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe.png" alt="шкафкупе" /></div>
-									<div class="stories__slide-txt">шкафкупе</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе">
+										<a href="../tags/./shkafkupe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe.png);"></div>
+											<div class="stories__slide-txt">шкафкупе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы минск">
+										<a href="../tags/./shkafy-minsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-minsk.png);"></div>
+											<div class="stories__slide-txt">шкафы минск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель минск">
+										<a href="../tags/./mebel--minsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--minsk.png);"></div>
+											<div class="stories__slide-txt">мебель минск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафна заказ">
+										<a href="../tags/./shkafna-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafna-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафна заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафпод заказ">
+										<a href="../tags/./shkafpod-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafpod-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафпод заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ">
+										<a href="../tags/./mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе на заказ">
+										<a href="../tags/./shkafkupe-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">шкафкупе на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе недорого">
+										<a href="../tags/./shkafkupe-nedorogo.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe-nedorogo.png);"></div>
+											<div class="stories__slide-txt">шкафкупе недорого</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафпод заказ минск">
+										<a href="../tags/./shkafpod-zakaz-minsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafpod-zakaz-minsk.png);"></div>
+											<div class="stories__slide-txt">шкафпод заказ минск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ минск">
+										<a href="../tags/./mebel--na-zakaz-minsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz-minsk.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ минск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф минск">
+										<a href="../tags/./shkaf-minsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-minsk.png);"></div>
+											<div class="stories__slide-txt">шкаф минск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель заказ">
+										<a href="../tags/./mebel--zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="заказ мебели">
+										<a href="../tags/./zakaz-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/zakaz-mebeli.png);"></div>
+											<div class="stories__slide-txt">заказ мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафв минске">
+										<a href="../tags/./shkafv-minske.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafv-minske.png);"></div>
+											<div class="stories__slide-txt">шкафв минске</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн мебели">
+										<a href="../tags/./dizayn-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-mebeli.png);"></div>
+											<div class="stories__slide-txt">дизайн мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе минск">
+										<a href="../tags/./shkafkupe-minsk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe-minsk.png);"></div>
+											<div class="stories__slide-txt">шкафкупе минск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе в минске">
+										<a href="../tags/./shkafkupe-v-minske.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe-v-minske.png);"></div>
+											<div class="stories__slide-txt">шкафкупе в минске</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафв прихожую">
+										<a href="../tags/./shkafv-prikhozhuyu.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafv-prikhozhuyu.png);"></div>
+											<div class="stories__slide-txt">шкафв прихожую</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе пескоструй">
+										<a href="../tags/./shkafkupe-peskostruy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe-peskostruy.png);"></div>
+											<div class="stories__slide-txt">шкафкупе пескоструй</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафкупе фотопечать">
+										<a href="../tags/./shkafkupe-fotopechat-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafkupe-fotopechat-.png);"></div>
+											<div class="stories__slide-txt">шкафкупе фотопечать</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы минск">
-								<a href="../tags/./shkafy-minsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-minsk.png" alt="шкафы минск" /></div>
-									<div class="stories__slide-txt">шкафы минск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель минск">
-								<a href="../tags/./mebel--minsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--minsk.png" alt="мебель минск" /></div>
-									<div class="stories__slide-txt">мебель минск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафна заказ">
-								<a href="../tags/./shkafna-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafna-zakaz.png" alt="шкафна заказ" /></div>
-									<div class="stories__slide-txt">шкафна заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафпод заказ">
-								<a href="../tags/./shkafpod-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafpod-zakaz.png" alt="шкафпод заказ" /></div>
-									<div class="stories__slide-txt">шкафпод заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ">
-								<a href="../tags/./mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz.png" alt="мебель на заказ" /></div>
-									<div class="stories__slide-txt">мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе на заказ">
-								<a href="../tags/./shkafkupe-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe-na-zakaz.png" alt="шкафкупе на заказ" /></div>
-									<div class="stories__slide-txt">шкафкупе на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе недорого">
-								<a href="../tags/./shkafkupe-nedorogo.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe-nedorogo.png" alt="шкафкупе недорого" /></div>
-									<div class="stories__slide-txt">шкафкупе недорого</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафпод заказ минск">
-								<a href="../tags/./shkafpod-zakaz-minsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafpod-zakaz-minsk.png" alt="шкафпод заказ минск" /></div>
-									<div class="stories__slide-txt">шкафпод заказ минск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ минск">
-								<a href="../tags/./mebel--na-zakaz-minsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz-minsk.png" alt="мебель на заказ минск" /></div>
-									<div class="stories__slide-txt">мебель на заказ минск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф минск">
-								<a href="../tags/./shkaf-minsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-minsk.png" alt="шкаф минск" /></div>
-									<div class="stories__slide-txt">шкаф минск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель заказ">
-								<a href="../tags/./mebel--zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--zakaz.png" alt="мебель заказ" /></div>
-									<div class="stories__slide-txt">мебель заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="заказ мебели">
-								<a href="../tags/./zakaz-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/zakaz-mebeli.png" alt="заказ мебели" /></div>
-									<div class="stories__slide-txt">заказ мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафв минске">
-								<a href="../tags/./shkafv-minske.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafv-minske.png" alt="шкафв минске" /></div>
-									<div class="stories__slide-txt">шкафв минске</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн мебели">
-								<a href="../tags/./dizayn-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-mebeli.png" alt="дизайн мебели" /></div>
-									<div class="stories__slide-txt">дизайн мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе минск">
-								<a href="../tags/./shkafkupe-minsk.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe-minsk.png" alt="шкафкупе минск" /></div>
-									<div class="stories__slide-txt">шкафкупе минск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе в минске">
-								<a href="../tags/./shkafkupe-v-minske.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe-v-minske.png" alt="шкафкупе в минске" /></div>
-									<div class="stories__slide-txt">шкафкупе в минске</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафв прихожую">
-								<a href="../tags/./shkafv-prikhozhuyu.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafv-prikhozhuyu.png" alt="шкафв прихожую" /></div>
-									<div class="stories__slide-txt">шкафв прихожую</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе пескоструй">
-								<a href="../tags/./shkafkupe-peskostruy.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe-peskostruy.png" alt="шкафкупе пескоструй" /></div>
-									<div class="stories__slide-txt">шкафкупе пескоструй</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафкупе фотопечать">
-								<a href="../tags/./shkafkupe-fotopechat-.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafkupe-fotopechat-.png" alt="шкафкупе фотопечать" /></div>
-									<div class="stories__slide-txt">шкафкупе фотопечать</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -261,9 +270,7 @@
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BueiLSajQ0w/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -371,7 +378,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>76</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5cbf98f6656c3e76cf22c108d6ab069b/5E1C3DFF/t51.2885-15/e35/55947329_2004225506550941_3373700782149448404_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Встроенная мебель по эскизу заказчика‼️">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/34df61f96f7b22b0b5ee386870c8fd31/5E43CAFF/t51.2885-15/e35/55947329_2004225506550941_3373700782149448404_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Встроенная мебель по эскизу заказчика‼️">
 								</div>
 								<div class="article-more__item-name">Встроенная мебель по эскизу заказчика‼️</div>
 							</a>
@@ -389,7 +396,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>57</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/6a7e28236c3f9b57edddfe0abdabbd57/5E1BCF6D/t51.2885-15/e35/54512773_2285983558325497_4195902566591549458_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="ШКАФЫ-КУПЕ и корпусная мебель под заказ.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/e0eb511e231048545fd89eb0bc907eee/5E435C6D/t51.2885-15/e35/54512773_2285983558325497_4195902566591549458_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="ШКАФЫ-КУПЕ и корпусная мебель под заказ.">
 								</div>
 								<div class="article-more__item-name">ШКАФЫ-КУПЕ и корпусная мебель под заказ.</div>
 							</a>
@@ -453,11 +460,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
