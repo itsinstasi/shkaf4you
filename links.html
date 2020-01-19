@@ -301,7 +301,7 @@
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/75644818_913694215694491_1768143288756921637_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=eIS5kPPVj0YAX-MZprz&oh=458fa7e77625a012c4f61899d0ba0278&oe=5EC106E8" alt="">
+							<center><img src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/75644818_913694215694491_1768143288756921637_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=yw5SX7orHxIAX8ERQ97&oh=23200ac97ac2285fc7b30e79d2060c3d&oe=5EC106E8" alt="">
 							</img></center>
 						</div>
 
@@ -378,6 +378,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
